@@ -19,3 +19,11 @@ if (!parsed.success){
 }
 
 export const config = parsed.data
+
+
+export const userSchema = z.object({
+    name: z.string(),
+    email:z.email(),
+    age: z.number()
+})
+
